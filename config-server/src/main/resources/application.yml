@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kyo4545/cloudConfigDemo/
+          search-paths: respo
+          username: kyo4545
+          password: zlszls001
+      label: master
+server:
+  port: 8888
